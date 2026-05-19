@@ -1,0 +1,8 @@
+name: Hellow workd
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build steps
+        run: echo "FIrst action"
