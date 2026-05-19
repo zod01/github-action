@@ -6,3 +6,19 @@ jobs:
     steps:
       - name: Build steps
         run: echo "FIrst action"
+
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test steps
+        run: |
+          echo "Hellow world"
+          echo "Hellow aman"
+
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        run: echo "deploying..."
