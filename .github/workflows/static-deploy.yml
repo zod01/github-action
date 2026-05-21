@@ -16,4 +16,4 @@ jobs:
 
       - name: Copy code to s3
         run: |
-          aws s3 sync . s3://github-action-html/
+          aws s3 sync ./ s3://github-action-html/
