@@ -13,3 +13,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
+
+      - name: Copy code to s3
+        run: |
+          aws sc3 sync ./ s3://github-action-html/
